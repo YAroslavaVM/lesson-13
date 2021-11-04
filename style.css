@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgb(207, 207, 207);
+    line-height: 2;
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 10px;
+    -webkit-box-shadow: 2px 4px 14px 4px #000000; 
+    box-shadow: 2px 4px 14px 4px #000000;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+a{
+    color: rgb(56, 199, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+
+}
+
+a.arrow{
+    position: relative;
+    margin-right: 50px;
+}
+
+a.arrow::after{
+    content: ">";
+    position: absolute;
+    margin: 0 5px;
+}
+
+a.arrow:hover::after,
+a.arrow:focus::after,
+a.arrow:active::after{
+    -moz-transform: translate(5px, 0px);
+    -webkit-transform: translate(5px, 0px);
+    -o-transform: translate(5px, 0px);
+    -ms-transform: translate(5px, 0px);
+    transform: translate(5px, 0px);
+    transition: 0.9s;
+}
+
+a.hexagon{
+    position: relative;
+    margin: 0;
+    padding-right: 50px;
+
+}
+
+
+
+a.hexagon::before{
+    background: url("../lesson13/img/4829869_arrow_next_right_icon.svg") center center no-repeat;
+    content: "";
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 147px;
+    margin: auto;
+    padding: 0;
+}
+
+a.hexagon::after{
+    background: url("../lesson13/img/1597483_hexagon_shape_sided_icon.svg");
+    color: rgb(0, 217, 255);
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+}
+
+a.hexagon:hover::after,
+a.hexagon:focus::after,
+a.hexagon:active::after{
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+    transition: 1s;
+}
+
+a.print::after{
+    content: ' (' attr(href) ') ';
+    color: black;
+    text-decoration: underline;
+}
+
+
+    div {
+        margin-left: 5%;
+    }
+    a {
+        color: rgb(0, 80, 94);
+        display: block;
+        margin-top: 2%;
+      }
+    #link:link {
+        color: rgb(124, 0, 103);
+      }
+    #visited:visited {
+        color: rgb(255, 94, 94);
+      }
+    p {
+        color: rgb(0, 80, 94);
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+    #hover:hover {
+        font-weight: bold;
+      }
+    #active:active {
+        color: rgb(124, 0, 103);
+      }
+    #focus:focus {
+        color: rgb(255, 0, 0);
+      }
+    input {
+        margin-top: 2%;
+        margin-left: 2%;
+      }
+    input:enabled {
+        font-size: 1em;
+        text-transform: uppercase;
+      }
+    input:disabled {
+        font-size: 0.5em;
+      }
+    input:checked {
+        height: 20px;
+        width: 20px;
+      }
+    li:first-child {
+        font-weight: bold;
+      }
+    li:last-child {
+        color: rgb(124, 0, 103);
+      }
+    a:only-child {
+        text-transform: uppercase;
+      }
+    article {
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+      }
+    article p:first-of-type {
+        font-weight: bold;
+      }
+    article p:last-of-type {
+        color: rgb(124, 0, 103);
+      }
+    article span:only-of-type {
+        text-transform: uppercase;
+      }
+    article h4:nth-child(2n) {
+        font-weight: bold;
+      }
+    article h4:nth-last-child(3n) {
+        color: rgb(124, 0, 103);
+      }
+    article h5:nth-of-type(2n) {
+        color: rgb(255, 94, 94);
+      }
+    article h5:nth-last-of-type(2n) {
+        font-weight: bold;
+      }
+    body h6:not(.bold) {
+        font-weight: normal;
+      }
